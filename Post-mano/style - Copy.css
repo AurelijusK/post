@@ -1,0 +1,536 @@
+body{
+    background: url(images/church.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'PT Serif', serif;
+    /* font-family: 'Lora', serif; */
+   
+}
+
+.style{
+    font-family: 'PT Serif', serif;
+    font-size: 34px;
+
+}
+.style2{
+    
+    font-family: 'PT Serif', serif;
+    font-size: 22px;
+    
+}
+
+
+/* meniu */
+.side-menu {
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 1000;
+    background:#01BAEF;
+    width: 250px;
+    padding-top: 100px;
+    /* padding-left: 25px; */
+    transition: all 1s ease-in-out 0s;
+  
+   
+   
+}
+
+.side-menu.active {
+    right: 0;
+
+}
+
+button.side-menu-hamburger {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    padding: 7px;
+    right: 15px;
+    top: 15px;
+    z-index: 1500;
+    background:#ffffff;
+    border: #01BAEF solid 3px;
+    outline: none;
+    border-radius: 7px;
+    transition: all 1s linear 0s;
+}
+
+button.side-menu-hamburger.open {
+    background: #ffffff;
+
+}
+
+
+.side-menu-brand{
+    display: block;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1500;
+    background-color:#0B4F6C;
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+    font-family: 'PT Serif', serif;
+    
+}
+
+.side-menu-brand:hover{
+    color: #01BAEF;
+    text-decoration: none;
+    
+ 
+}
+
+
+.side-menu-list {
+    padding: 0;
+    list-style: none;
+   
+}
+
+
+
+.side-menu-link{
+    color: #fff;
+    display: block;
+    padding: 20px;
+    font-family: 'PT Serif', serif;
+    
+ 
+}
+.side-menu-link:hover{
+    color: #0B4F6C;
+    text-decoration: none;
+    
+ 
+}
+
+/* Icon 1 */
+
+.animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    
+  }
+  
+ .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+
+  .animated-icon3 span {
+      background: #01BAEF;
+  }
+
+  /* Icon 3*/
+  
+  .animated-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .animated-icon3 span:nth-child(2), .animated-icon3 span:nth-child(3) {
+    top: 10px;
+  }
+  
+  .animated-icon3 span:nth-child(4) {
+    top: 20px;
+  }
+  
+  .side-menu-hamburger.open .animated-icon3 span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .side-menu-hamburger.open .animated-icon3 span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .side-menu-hamburger.open .animated-icon3 span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  .side-menu-hamburger.open .animated-icon3 span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+
+/* end meniu */
+
+/* sections */
+.welcome{
+    background: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    left: 0;
+    padding-top: 60vh;
+  
+}
+
+
+
+.next{
+    background: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 0;
+  
+}
+
+
+.last{
+    background: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    left: 0;
+  
+}
+
+
+.back{
+    background: url(images/balons.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.borders{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+  
+ 
+}
+
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+.photo-news{
+    position: absolute;
+    
+    top: 200px;
+    left: 80px;
+    z-index: 200;
+    background: url(images/sale.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35vw;
+    height: 55vh;
+    border-radius: 5px;  
+    
+}
+/* .photo-news::before {
+    content: '';
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 45%;
+    background-color: #20BF5566;
+    
+   
+} */
+
+.container-news {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 60;
+    background: url(images/paper.jpg);
+    font-family: 'PT Serif', serif;
+    width: 60vw;
+    height: 26vh;
+    border-radius: 5px;
+
+  }
+  .container-news::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 300%;
+    background-color: hsla(193, 99%, 47%, 0.3);
+    
+   
+}
+
+  .news{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 40px;
+    
+}
+  
+
+
+
+
+.round-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 15px;
+ 
+}
+
+.round-icon2{
+    position: absolute;
+    left: 80px;
+    bottom: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #ffffff;
+ 
+}
+
+
+
+
+.portfolio-item {
+    position: relative;
+    display: block;
+    height: 250px;
+    /* width: 200px; */
+    
+}
+.portfolio-item:hover::before {
+
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background-color: transparent;
+    transition: all 0.8s ease;
+    
+   
+}
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease;
+   
+}
+.portfolio-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    text-align: left;
+    color: #ffffff;
+    cursor: pointer;
+}
+.one{
+    background: url(images/bible.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.two{
+    background: url(images/movie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.three{
+    background: url(images/bible.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.four{
+    background: url(images/movie.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.port-link{
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+}
+.text-link{
+  
+    display:block;
+    font-family: 'PT Serif', serif;
+}
+
+
+.title{
+    align-self: center;
+    margin: auto;
+    text-align: center;
+
+}
+
+.white-text{
+    color: #ffffff;
+}
+
+.yellow-text{
+    color: #E3B01C;
+}
+
+
+.icon-item {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+ 
+}
+.round{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin: auto;
+    font-size: 52px;
+    padding: 15px;
+}
+
+.center{
+    width: 300px;
+}
+
+.icon-item2 {
+    height: 70px;
+    max-width: 70px; 
+    margin: 10px;
+    
+}
+
+.round2{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #1D809F;
+    margin: auto;
+    font-size: 32px;
+    padding: 7px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.helo{
+    font-family: 'Montserrat', sans-serif;
+    color: #0B4F6C;
+    font-size: 92px;
+}
+
+.helo2{
+    font-family: 'Montserrat', sans-serif;
+    color: #0B4F6C;
+    font-size: 54px;
+}
+
+@media only screen and (max-width: 400px) {
+    .side-menu {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+  
+    }
+
+    
+.helo{
+    font-size: 54px;
+    }
+
+.helo2{
+    font-size: 36px;
+    }
+
+.style{
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+
+}
+.style2{
+    
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    
+}
+
+/* 
+.photo-news{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.container-news{
+    position: relative;
+    width: 100%;
+
+
+}
+
+.container-news::before {
+ 
+    height: 100%;
+  
+}
+
+.round-icon2{
+    position: relative;
+    left: 80px;
+    bottom: -15px;
+
+
+ 
+} */
+
+
+}
